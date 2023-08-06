@@ -1,0 +1,35 @@
+.app-border {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 60px;
+  border: 1px solid #212529;
+  border-radius: 10px;
+}
+
+.weather-app {
+  padding-top: 30px;
+}
+
+.weather-info {
+  list-style-type: none;
+}
+
+.temperature {
+  font-size: 50px;
+}
+
+.tempScales {
+  font-size: 15px;
+  font-weight: 25px;
+  position: relative;
+  bottom: 15px;
+}
+
+.small {
+  padding-top: 20px;
+}
+
+#right-column {
+  text-align: right;
+}

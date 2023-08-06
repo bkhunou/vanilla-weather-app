@@ -9,7 +9,7 @@
     <title>Vanilla Weather App</title>
 </head>
 <div class="container">
-    <div class="app-boarder">
+    <div class="app-border">
         <div class="search-engine">
             <form class="search">
                 <input type="username" id="searchCity" placeholder="Enter the city">
@@ -19,16 +19,17 @@
         <div class="weather-app">
             <div class="row">
                 <div class="col-6" id="left-column">
-                    <h1>Cape Town</h1>
-                    <h2 id="currentDateTime">
-                        Thursday 13:06
-                    </h2>
-                </div>
-                <div class="col-6">
                     <h1 id="temperature">18<span class="tempScales"><span id="celcius">°C</span> | <span
-                                id="fahrenheit">°F</span></span></h1>
+                                class="fahrenheit">°F</span></span>
+                    </h1>
+                    <h3>Cape Town</h3>
+                    <p id="currentDateTime">
+                        Sunday 06 August 13:06
+                    </p>
+                </div>
+                <div class="col-6" id="right-column">
                     <h2 id="description">Clear</h2>
-                    <ul>
+                    <ul class="weather-info">
                         <li>Precipitation: <span id="precipitation">5</span>%</li>
                         <li>Humidity: <span id="humidity">5</span>%</li>
                         <li>Wind: <span id="wind">10</span>km/h</li>
@@ -36,13 +37,13 @@
                 </div>
             </div>
         </div>
-        <small><a href="https://github.com/bkhunou/vanilla-weather-app" target="_blank">Open-source code</a> by Boipelo
+        <small><a href="https://github.com/bkhunou/vanilla-weather-app" target="_blank">Open-source code</a> by
+            Boipelo
             Khunou</small>
     </div>
 </div>
 
 <body>
-
 </body>
 <script src="src/app.js"></script>
 
