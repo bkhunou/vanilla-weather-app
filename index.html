@@ -6,44 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
 </head>
-<div class="container">
-    <div class="app-border">
-        <div class="search-engine">
-            <form class="search">
-                <input type="username" id="searchCity" placeholder="Enter the city">
-                <input type="submit" value="Search">
-            </form>
-        </div>
-        <div class="weather-app">
-            <div class="row">
-                <div class="col-6" id="left-column">
-                    <h1 id="temperature">18<span class="tempScales"><span id="celcius">°C</span> | <span
-                                class="fahrenheit">°F</span></span>
-                    </h1>
-                    <h3>Cape Town</h3>
-                    <p id="currentDateTime">
-                        Sunday 06 August 13:06
-                    </p>
-                </div>
-                <div class="col-6" id="right-column">
-                    <h2 id="description">Clear</h2>
-                    <ul class="weather-info">
-                        <li>Precipitation: <span id="precipitation">5</span>%</li>
-                        <li>Humidity: <span id="humidity">5</span>%</li>
-                        <li>Wind: <span id="wind">10</span>km/h</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <small><a href="https://github.com/bkhunou/vanilla-weather-app" target="_blank">Open-source code</a> by
-            Boipelo
-            Khunou</small>
-    </div>
-</div>
 
 <body>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="app-border">
+                <div class="search-engine">
+                    <form id="search">
+                        <input type="username" id="searchCity" placeholder="Enter the city">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <div class="weather-app">
+                    <div class="row">
+                        <div class="col-6" id="left-column">
+                            <h1 id="temperature"></h1><span class="tempUnits"><span id="celsius" href="#">°C </span> |
+                                <span id="fahrenheit" href="#">°F</span></span>
+                            <h3 id="city"></h3>
+                            <p id="currentDateTime">
+                            </p>
+                        </div>
+                        <div class="col-6" id="right-column">
+                            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                                alt="Clear" id="icon" />
+                            <h2 id="description">Clear</h2>
+                            <ul class="weather-info">
+                                <li>Humidity: <span id="humidity"></span>%</li>
+                                <li>Wind: <span id="wind"></span>km/h</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <small><a href="https://github.com/bkhunou/vanilla-weather-app" target="_blank">Open-source code</a> by
+                Boipelo
+                Khunou</small>
+        </div>
+    </div>
 </body>
 <script src="src/app.js"></script>
 

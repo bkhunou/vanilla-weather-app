@@ -1,10 +1,13 @@
 .app-border {
+  padding: 60px;
+  border: 5px solid #dabbab;
+  border-radius: 10px;
+}
+
+.weather-app-wrapper {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 100px;
-  padding: 60px;
-  border: 1px solid #212529;
-  border-radius: 10px;
 }
 
 .weather-app {
@@ -15,21 +18,50 @@
   list-style-type: none;
 }
 
-.temperature {
+#temperature {
   font-size: 50px;
+  margin: 0;
 }
 
-.tempScales {
-  font-size: 15px;
+.tempUnits {
   font-weight: 25px;
+  display: flex;
+  padding-left: 5px;
+  font-size: 16px;
+  line-height: 24px;
   position: relative;
-  bottom: 15px;
+  bottom: 54px;
+  left: 55px;
+}
+
+#icon {
+  max-width: 60px;
 }
 
 .small {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 #right-column {
   text-align: right;
+}
+
+#celsius {
+  color: black;
+}
+
+#celsius:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#fahrenheit {
+  color: rgb(113, 112, 112);
+}
+
+#fahrenheit:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
 }
