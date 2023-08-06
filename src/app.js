@@ -36,10 +36,7 @@ function displayTemp(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.condition.description;
-  document.querySelector(
-    "#icon"
-  ).innerHTML = `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png`;
-}
+  //document.querySelector("#icon").innerHTML = response.data.condition.icon;
 
 function search(city) {
   let apiKey = "bt404e491af877ff83o4902d86d401be";
