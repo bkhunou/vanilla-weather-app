@@ -1,6 +1,6 @@
 .app-border {
   padding: 60px;
-  border: 5px solid #efbe1d;
+  border: 2px solid #efbe1d;
   border-radius: 10px;
 }
 
@@ -18,24 +18,36 @@
   list-style-type: none;
 }
 
+#search-btn {
+  background-color: #efbe1d;
+  border: 5px;
+  border-radius: 3px;
+  padding-left: 2px;
+}
+
+#search-btn:hover {
+  color: aliceblue;
+  background-color: #403a70;
+  cursor: pointer;
+  padding: 6px auto;
+}
+
 #temperature {
-  font-size: 50px;
+  font-size: 65px;
   margin: 0;
 }
 
 .tempUnits {
   font-weight: 25px;
-  display: flex;
   padding-left: 5px;
   font-size: 16px;
   line-height: 24px;
   position: relative;
-  bottom: 54px;
-  left: 55px;
+  top: -35px;
 }
 
 #icon {
-  max-width: 60px;
+  max-width: 75px;
 }
 
 .small {
