@@ -32,7 +32,7 @@ function displayTemp(response) {
   document.querySelector("#humidity").innerHTML =
     response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speedi
+    response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
     response.data.condition.description;
