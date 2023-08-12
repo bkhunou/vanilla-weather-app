@@ -42,6 +42,7 @@ function displayTemp(response) {
       "src",
       `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
     );
+  celsiusTemperature = response.data.temperature.current;
 }
 
 function search(city) {
