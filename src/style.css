@@ -36,15 +36,15 @@
 }
 
 #search-btn {
-  background-color: #efbe1d;
-  border: 5px;
+  background-color: #f3eacc;
+  border-color: aliceblue;
   border-radius: 3px;
-  padding-left: 2px;
+  padding: 10px auto;
 }
 
 #search-btn:hover {
-  color: aliceblue;
-  background-color: #403a70;
+  color: rgb(0, 0, 0);
+  background-color: #f2b23a;
   cursor: pointer;
   padding: 6px auto;
 }
