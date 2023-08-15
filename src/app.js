@@ -12,11 +12,11 @@ let days = [
 ];
 let currentDay = days[now.getDay()];
 let currentHour = now.getHours();
-if (currentHour < 9) {
+if (currentHour < 10) {
   currentHour = `0${currentHour}`;
 }
 let currentMinute = now.getMinutes();
-if (currentMinute < 9) {
+if (currentMinute < 10) {
   currentMinute = `0${currentMinute}`;
 }
 
